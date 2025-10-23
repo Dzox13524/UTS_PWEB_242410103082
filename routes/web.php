@@ -7,7 +7,8 @@ Route::get('/', function () {
 });
 
 Route::get('/login', [PageController::class, 'login'])->name('login');
+Route::get('/loginAuth', [PageController::class, 'loginAuth'])->name('loginAuth');
 Route::get('/dashboard', [PageController::class, 'dashboard'])->name('dashboard');
-Route::get('/pengelolaan', [PageController::class, 'pengelolaanPage'])->name('pengelolaan');
-Route::get('/profile', [PageController::class, 'profilePage'])->name('profile');
+Route::get('/pengelolaan', [PageController::class, 'pengelolaan'])->name('pengelolaan');
+Route::get('/profile', [PageController::class, 'profile'])->name('profile');
 

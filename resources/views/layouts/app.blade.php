@@ -30,7 +30,7 @@
     @endif
 
     @if(!request()->routeIs('login'))
-        @include('components.footer')
+        <x-footer />
     @endif
 </body>
 </html>

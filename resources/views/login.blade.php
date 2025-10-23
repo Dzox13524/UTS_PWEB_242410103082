@@ -12,12 +12,12 @@
             <span class="block sm:inline">{{ $errors->first('loginError') }}</span>
         </div>
     @endif
-    <form action="{{ route('dashboard') }}" method="GET" id="loginForm"> 
+    <form action="{{ route('loginAuth') }}" method="GET" id="loginForm"> 
         <div class="mb-4">
-            <label for="nama" class="block text-sm font-medium text-gray-300 mb-2">Username</label>
+            <label for="username" class="block text-sm font-medium text-gray-300 mb-2">Username</label>
             <input type="text"
-                   name="nama"          
-                   id="nama"
+                   name="username"          
+                   id="username"
                    placeholder="masukkan username" 
                    required
                    class="w-full px-4 py-3 bg-gray-900 bg-opacity-70 border border-gray-700 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500"

@@ -6,15 +6,15 @@
     <div class="relative">
       <button id="profileButton" class="block focus:outline-none">
         <img class="w-10 h-10 rounded-full object-cover border-2 border-gray-500 hover:border-blue-400 transition-colors" 
-             src="https://i.pravatar.cc/100" 
+             src="{{$image}}" 
              alt="Foto Profil">
       </button>
       <div id="profileDropdown" 
            class="hidden absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 text-gray-800 z-50">
-        <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100">
-          Edit Profil
+        <a href="/profile?username={{ $username }}" class="block px-4 py-2 text-sm hover:bg-gray-100">
+          Lihat Profil
         </a>
-        <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100">
+        <a href="/login" class="block px-4 py-2 text-sm hover:bg-gray-100">
           Log Out
         </a>
       </div>
